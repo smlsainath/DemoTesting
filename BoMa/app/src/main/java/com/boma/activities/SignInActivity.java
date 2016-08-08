@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.boma.R;
-import com.boma.appconfig.ApplicationContext;
 import com.boma.utils.CustomLog;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -27,7 +26,6 @@ import com.facebook.GraphResponse;
 import com.facebook.HttpMethod;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -86,7 +84,7 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
             @Override
             public void onSuccess(LoginResult loginResult) {
 
-                Toast.makeText(SignInActivity.this,"FbLoginSuccessfull",Toast.LENGTH_LONG).show();
+                Toast.makeText(SignInActivity.this, "FbLoginSuccessfull", Toast.LENGTH_LONG).show();
 
                 String accessToken = loginResult.getAccessToken().getToken();
                 CustomLog.info(LOG_TAG, "doFacebookLogin: onSuccess Token is " +
