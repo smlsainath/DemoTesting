@@ -46,7 +46,7 @@ import java.util.Arrays;
 
 public class SignInActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
-    private String LOG_TAG ="SignInActivity";
+    private String LOG_TAG = "SignInActivity";
     private GoogleApiClient mGoogleApiClient;
     int FB_SIGN_IN = 5;
     int G_SIGN_IN = 6;
