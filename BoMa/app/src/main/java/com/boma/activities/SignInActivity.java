@@ -48,8 +48,8 @@ public class SignInActivity extends AppCompatActivity implements GoogleApiClient
 
     private String LOG_TAG = "SignInActivity";
     private GoogleApiClient mGoogleApiClient;
-    int FB_SIGN_IN = 6;
-    int G_SIGN_IN = 7;
+    int FB_SIGN_IN = 5;
+    int G_SIGN_IN = 6;
     /* Is there a ConnectionResult resolution in progress? */
     private boolean mIsResolving = false;
     /* Should we automatically resolve ConnectionResults when possible? */
