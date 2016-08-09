@@ -46,10 +46,10 @@ import java.util.Arrays;
 
 public class SignInActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
-    private String LOG_TAG ="SignInActivity";
+    private String LOG_TAG = "SignInActivity";
     private GoogleApiClient mGoogleApiClient;
-    int FB_SIGN_IN = 5;
-    int G_SIGN_IN = 6;
+    int FB_SIGN_IN = 4;
+    int G_SIGN_IN = 5;
     /* Is there a ConnectionResult resolution in progress? */
     private boolean mIsResolving = false;
     /* Should we automatically resolve ConnectionResults when possible? */
